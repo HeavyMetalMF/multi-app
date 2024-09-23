@@ -1,5 +1,5 @@
 import './MainPage.scss'
-import WeatherPage from "../weather/WeatherPage.tsx";
+import WeatherPage from "../weather/ui/WeatherPage.tsx";
 import VideoPage from "../video/VideoPage.tsx";
 import AudioPage from "../audio/AudioPage.tsx";
 import FilesPage from "../files/FilesPage.tsx";
