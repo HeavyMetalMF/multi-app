@@ -1,0 +1,15 @@
+@mixin main-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 250px;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+}
+
+@mixin main-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

@@ -1,0 +1,7 @@
+@import '../../shared/ui/mixin';
+
+.weather {
+    &__block {
+        @include main-block;
+    }
+}

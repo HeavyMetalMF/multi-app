@@ -1,0 +1,7 @@
+@import '../../shared/ui/mixin';
+
+.video {
+  &_block {
+    @include main-block;
+  }
+}

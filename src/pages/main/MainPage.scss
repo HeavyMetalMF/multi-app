@@ -1,0 +1,27 @@
+@import '../../shared/ui/mixin';
+
+.main {
+  display: grid;
+  grid-template-areas: "a a a"
+                       "b c d";
+  gap: 20px 30px;
+  padding: 20px 20px;
+  &__header-row {
+    grid-area: a;
+  }
+  &__first-column {
+    @include main-column;
+    grid-area: b;
+  }
+  &__second-column {
+    @include main-column;
+    grid-area: c;
+  }
+  &__third-column {
+    @include main-column;
+    grid-area: d;
+  }
+  &__block {
+    @include main-block;
+  }
+}

@@ -1,0 +1,7 @@
+@import '../../shared/ui/mixin';
+
+.messenger {
+  &_block {
+    @include main-block;
+  }
+}

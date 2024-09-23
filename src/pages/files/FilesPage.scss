@@ -1,0 +1,7 @@
+@import '../../shared/ui/mixin';
+
+.files {
+  &_block {
+    @include main-block;
+  }
+}
