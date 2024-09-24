@@ -1,18 +1,16 @@
 export class DateHelper {
-  private _instance: DateHelper | null = null;
+  private static _instance: DateHelper | null = null;
   constructor() {
   }
 
-  public static Instance () {
-    if (this._instance) {
-      return this._instance;
-    } else {
-      this._instance = new DateHelper();
-      return this._instance;
+  static get Instance () {
+    if (!DateHelper._instance) {
+      DateHelper._instance = new DateHelper();
     }
+    return DateHelper._instance;
   }
 
   public getCurrentDate () {
-    return `${new Date().getDate()}.${new Date().getMonth()}.${new Date().getFullYear()}`
+    return `${new Date().getDate()}.0${new Date().getMonth() + 1}.${new Date().getFullYear()}`
   }
 }

@@ -3,5 +3,29 @@
 .weather {
     &__block {
         @include main-block;
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        &__temperature {
+            //display: flex;
+            //justify-content: center;
+            //align-items: center;
+            //height: 65%;
+        }
+        &__current-weather {
+            display: flex;
+            justify-content: space-between;
+            height: 240px;
+            &__now {
+                flex-basis: 50%;
+                border-right: 1px solid hsl(0, 0%, 80%);
+            }
+            &__forecast {
+
+            }
+        }
     }
 }
