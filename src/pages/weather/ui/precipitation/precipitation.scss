@@ -1,0 +1,20 @@
+.precipitation {
+  &__switchers {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+    &__item {
+      box-shadow: 0 0 0 7px rgba(76, 163, 222, 0.5);
+    }
+  }
+  &__full-info {
+    box-shadow: 0 0 0 15px rgba(76, 163, 222, 0.5);
+  }
+  &__rain {
+  }
+  &__humidity {
+  }
+  &__wind {
+  }
+}

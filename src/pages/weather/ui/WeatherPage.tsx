@@ -1,20 +1,17 @@
 import './WeatherPage.scss';
 import { DateHelper } from "../../../shared/helpers/dateHelper.ts";
+import PrecipitationBlock from "./precipitation/PrecipitationBlock.tsx";
 
 const WeatherPage = () => {
   return (
     <div className="weather__block">
-      <div className="weather__block__header">
-        <div>Курилово</div>
-        <div>{DateHelper.Instance.getCurrentDate()}</div>
+      <div className="weather__general-info">
+        <PrecipitationBlock />
+        <div>2 div</div>
+        <div>3 div</div>
       </div>
-      <div className="weather__block__current-weather">
-        <div className="weather__block__current-weather__now">
-          left
-        </div>
-        <div className="weather__block__current-weather__forecast">
-          <div className="weather__block__temperature">+10</div>
-        </div>
+      <div className="weather__current-weather">
+        current-weather
       </div>
     </div>
   );
