@@ -1,5 +1,4 @@
 import './WeatherPage.scss';
-import { DateHelper } from "../../../shared/helpers/dateHelper.ts";
 import PrecipitationBlock from "./precipitation/PrecipitationBlock.tsx";
 
 const WeatherPage = () => {
