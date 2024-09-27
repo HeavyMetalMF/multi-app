@@ -5,11 +5,12 @@
     gap: 30px;
     margin-top: 40px;
     &__item {
-      box-shadow: 0 0 0 7px rgba(76, 163, 222, 0.5);
+      box-shadow: 0 0 0 4px rgba(76, 163, 222, 0.5);
     }
   }
   &__full-info {
-    box-shadow: 0 0 0 15px rgba(76, 163, 222, 0.5);
+    box-shadow: 0 0 0 5px rgba(103, 179, 231, 0.5);
+    padding: 20px;
   }
   &__rain {
   }

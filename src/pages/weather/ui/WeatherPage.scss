@@ -3,8 +3,7 @@
 .weather {
     &__block {
         @include main-block;
-        //background-color: rgb(72, 156, 232);
-        background: linear-gradient(to right, rgb(45, 140, 213) 27%, rgb(76, 163, 222) 69%);
+        background: linear-gradient(to right, rgb(76, 163, 222) 10%, rgb(54, 149, 227) 69%);
         height: 550px;
     }
 
