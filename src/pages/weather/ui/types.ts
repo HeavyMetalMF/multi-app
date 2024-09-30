@@ -6,4 +6,5 @@ export interface StyledWeatherBlockProps {
   height: number;
   radius: number
   className?: string;
+  isSwitchers?: boolean;
 }

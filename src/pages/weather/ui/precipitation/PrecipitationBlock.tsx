@@ -3,24 +3,36 @@ import Humidity from "./Humidity.tsx";
 import Wind from "./Wind.tsx";
 import './precipitation.scss';
 import StyledWeatherBlock from "../styledWeatherBlock/StyledWeatherBlock.tsx";
-// import  { ReactComponent as DropIcon } from  '../../../../shared/ui/assets/img/drop.svg';
+import DropIcon from  '../../../../shared/ui/assets/img/drop2.svg?react';
 
 const PrecipitationBlock = () => {
   return (
     <div>
-      <StyledWeatherBlock className="precipitation__full-info" radius={30} width={205} height={185}>
-          <div>
-              <div>
-                  top info
-                  {/*<DropIcon />*/}
+      <StyledWeatherBlock radius={30} width={255} height={220}>
+          <div className="precipitation__full-info">
+            <div className="precipitation__full-info__top">
+              <div className="precipitation__full-info__top__data">
+                <div className="precipitation__full-info__top__data__header">
+                  <DropIcon  style={{width: '15px'}} />
+                  <span className="precipitation__full-info__top__data__header__text">Влажность</span>
+                </div>
+                <div className="precipitation__full-info__top__data__procent">13%</div>
+                <span className="precipitation__full-info__top__data__status">Влажно</span>
               </div>
-              <div>bottom info</div>
+              <div className="precipitation__full-info__top__thermometer">
+                <div className="precipitation__full-info__top__thermometer__current-data" style={{bottom: 'calc(50% - 10px)'}}></div>
+              </div>
+            </div>
+            <div className="precipitation__full-info__bottom">
+              <div>lorem ipsumtext</div>
+              <div>sadasdaj fdfds f</div>
+            </div>
           </div>
       </StyledWeatherBlock>
         <div className="precipitation__switchers">
-        <StyledWeatherBlock className="precipitation__switchers__item" radius={8} width={50} height={50}> <Rain/> </StyledWeatherBlock>
-        <StyledWeatherBlock className="precipitation__switchers__item" radius={8} width={50} height={50}> <Humidity /> </StyledWeatherBlock>
-        <StyledWeatherBlock className="precipitation__switchers__item" radius={8} width={50} height={50}> <Wind /> </StyledWeatherBlock>
+        <StyledWeatherBlock isSwitchers className="precipitation__switchers__item" radius={8} width={60} height={60}> <Rain/> </StyledWeatherBlock>
+        <StyledWeatherBlock isSwitchers className="precipitation__switchers__item" radius={8} width={60} height={60}> <Humidity /> </StyledWeatherBlock>
+        <StyledWeatherBlock isSwitchers className="precipitation__switchers__item" radius={8} width={60} height={60}> <Wind /> </StyledWeatherBlock>
       </div>
     </div>
   );

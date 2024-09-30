@@ -13,5 +13,9 @@
         gap: 30px;
     }
     &__current-weather {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-top: 30px;
     }
 }

@@ -5,17 +5,82 @@
     gap: 30px;
     margin-top: 40px;
     &__item {
-      box-shadow: 0 0 0 4px rgba(76, 163, 222, 0.5);
+      //padding: 8px;
+    }
+    &__item-content {
+      //padding: 8px;
     }
   }
   &__full-info {
-    box-shadow: 0 0 0 5px rgba(103, 179, 231, 0.5);
-    padding: 20px;
+    color: white;
+    padding: 15px;
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      height: 115px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      &__data{
+        &__header {
+          display: flex;
+          margin-bottom: 15px;
+          &__text {
+            font-size: 12px;
+            margin-left: 5px;
+          }
+        }
+        &__status {
+          margin-top: 5px;
+          font-size: 12px;
+        }
+        &__procent {
+          font-size: 32px;
+          margin-bottom: 7px;
+        }
+      }
+      &__thermometer{
+        border: 1px solid white;
+        border-radius: 40px;
+        width: 27px;
+        height: 80%;
+        position: relative;
+        &__current-data {
+          position: absolute;
+          bottom: 50%;
+          left: 3.5px;
+          width: 20px;
+          height: 20px;
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+    }
+    &__bottom {
+      margin-top: 5px;
+      font-size: 14px;
+    }
   }
   &__rain {
+    &__zont {
+      cursor: pointer;
+      margin-top: 6px;
+      margin-left: 6px;
+      opacity: 0.6;
+    }
   }
   &__humidity {
+    &__drops {
+      cursor: pointer;
+      margin-top: 6px;
+      margin-left: 6px;
+      opacity: 0.6;
+    }
   }
   &__wind {
+    &__icon {
+      cursor: pointer;
+      margin-top: 6px;
+      margin-left: 6px;
+      opacity: 0.6;
+    }
   }
 }
